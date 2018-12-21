@@ -50,3 +50,4 @@ machine.removeNumber(x) : 숫자 x를 최댓값 기계 machine으로부터 제�
 
 machine.getMax() : 최댓값 기계 machine이 갖고있는 숫자들 중 최댓값을 반환합니다.
 '''
+ 
