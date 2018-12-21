@@ -36,7 +36,7 @@ def main():
         else :
             second_count = second_count + 1
 
-    print(first_count)
+    print(first_count) 
     print(second_count)
 
     slices_hours = [first_count, second_count]
