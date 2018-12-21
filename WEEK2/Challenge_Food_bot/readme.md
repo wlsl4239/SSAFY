@@ -48,5 +48,5 @@ sampling으로 음식 하나를 추천해준다. 음식의 content는 음식의 
 
 
 ### 추가사항
-python -m pip install plotly
-python -m pip install slackclient
+- python -m pip install plotly
+- python -m pip install slackclient
