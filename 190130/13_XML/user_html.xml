@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<!-- 주-석 -->
+	<head>
+	</head>
+	<body>
+		<h1 속성 = "값">제목</h1>
+		<링크 controls = 'true'>http://www.naver.com</링크>
+		<홈_링크>home.html</홈_링크>
+		<네이버_링크>http://www.naver.com</네이버_링크>		
+	</body>
+</html>

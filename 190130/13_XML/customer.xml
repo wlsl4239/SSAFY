@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+	<!-- 1. -->
+	<customer>	<!-- Element는 값, 구조를 가진다. -->
+		<customerNumber>c001</customerNumber>
+		<name>홍길동</name>
+		<point>100</point>
+	</customer>
+	
+	<!-- 2. 속성 : 데이터의 종류에 따라 확장성을 고려하지 않아도 되는 경우 -->
+	<customer customerNumber="c002">
+		<name>이순신</name>
+		<point>50</point>
+	</customer>
+	
+	<!-- 3. 속성을 확실하게 사용. -->
+	<customer customerNumber="c003" name="강감찬" point="30" />
+	
+</customers>

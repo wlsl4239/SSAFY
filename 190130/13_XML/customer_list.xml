@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+	<!-- 2. 속성 : 데이터의 종류에 따라 확장성을 고려하지 않아도 되는 경우 -->
+	<customer customerNumber="c001">
+		<name>홍길동</name>
+		<point>130</point>
+	</customer>
+	<customer customerNumber="c002">
+		<name>이순신</name>
+		<point>50</point>
+	</customer>
+	<customer customerNumber="c003">
+		<name>강감찬</name>
+		<point>120</point>
+	</customer>
+	
+	
+</customers>
