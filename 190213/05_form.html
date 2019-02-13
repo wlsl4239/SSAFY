@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function searchId() {
+	location.href="searchId.jsp";
+}</script>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<form action="serverPage.jsp">
+		아이디(email) <input type="email" name="id" required="required"><br> 
+		비밀번호 <input type="password" name="pw" required="required"><br>
+		생년월일 <input type="date" name="user_date"><br>
+		나이 <input type="number" max="120" min="0" name="age"><br>
+		성별 
+		남<input type="radio" name="gender" value="M"> 
+		여<input type="radio" name="gender" value="F"><br> 
+		관심사
+		컴퓨터<input type="checkbox"	name="hobby" value="Computer"> 
+		독서<input type="checkbox" name="hobby" value="Book">
+		요리<input type="checkbox" name="hobby" value="Cook"><br>
+		 <input	type="button" value="아이디 찾기" onclick="searchId()"></input> 
+		 <input	type="submit" value="서버전달"></input> 
+		 <input type="reset" value="다시작성"></input>
+	</form>
+	<!-- 범위 지정을 하기 위해 사용. -->
+	<!-- name 속성이 없으면 서버에 전송할 때 값을 구분할 수 없음. -->
+</body>
+</html>
+
+<!-- Cross Site Script -->
+<!-- A방식(html에서 다 구현)할 경우 브라우저 콘솔로 서버접근이 가능해짐. -->
