@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#title {
+	font-size: 30pt;
+	color: orange;
+	text-align: center;
+	text-shadow: 2px 2px black;
+}
+
+.subtitle {
+	color: green;
+	font-weight: bold;
+}
+
+#content {
+	border-top: thick;
+	border-top-color: black;
+	border-bottom: thick;
+	border-bottom-color: black;
+}
+</style>
+</head>
+<body>
+	<div id="title">Become a Member</div>
+	<br>
+
+	<form>
+		<div id="content">
+			<div class="subtitle">Registration Information</div>
+			<br>
+			<table>
+				<tr>
+					<td>E-Mail:</td>
+					<td><input type="email" required="required"></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password"
+						placeholder="At least 6 letters or numbers" required="required"
+						minlength="6"></td>
+				</tr>
+				<tr>
+					<td>VerifyPassword:</td>
+					<td><input type="password" required="required" minlength="6"></td>
+				</tr>
+			</table>
+			<br>
+
+			<div class="subtitle">Member Information</div>
+			<table>
+				<tr>
+					<td>First Name:</td>
+					<td><input required="required"></td>
+				</tr>
+				<tr>
+					<td>last Name:</td>
+					<td><input required="required"></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><input></td>
+				</tr>
+				<tr>
+					<td>City:</td>
+					<td><input required="required"></td>
+				</tr>
+				<tr>
+					<td>State:</td>
+					<td><input placeholder="2-character code" required="required"></td>
+				</tr>
+				<tr>
+					<td>ZIP Code:</td>
+					<td><input placeholder="5 or 9 digits" required="required"></td>
+				</tr>
+				<tr>
+					<td>PhoneNumber:</td>
+					<td><input></td>
+				</tr>
+			</table>
+			<br>
+
+			<div class="subtitle">Membership Information</div>
+			<table>
+				<tr>
+					<td>Membership Type:</td>
+					<td><select>
+							<option value="junior">Junior
+							<option value="senior">Senior
+							<option value="adult">Adult
+					</select></td>
+				</tr>
+
+				<tr>
+					<td>Starting Date:</td>
+					<td><input type="date" required="required"></td>
+				</tr>
+				<tr>
+					<td>Tickets for Guests:</td>
+					<td><input type="number" value="2"></td>
+				</tr>
+			</table>
+			<br>
+
+			<div class="subtitle">Submit Your Membership</div>
+			<input type="submit" value="Submit">
+			<input	type="reset" value="Reset Fields">
+		</div>
+	</form>
+</body>
+</html>
