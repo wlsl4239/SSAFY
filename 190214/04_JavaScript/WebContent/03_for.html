@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//html에서 view, event를 발생하는 경우 javascript 함수는 상단에서 정의.
+
+		var gugu = function(){
+		var x=document.querySelector("input").value;
+		var s = "";
+		for (var i = 1; i <= 9; i++)
+			s += ("<li>" + x + " * " + i + " = " + x * i + "</li>");
+		document.querySelector("ul").innerHTML = s;
+		}
+	</script>
+
+</head>
+<body>
+	<h1>X단</h1>
+
+	<input type='number' id='num' onchange="gugu()">
+	<ul></ul>
+	
+
+</body>
+</html>

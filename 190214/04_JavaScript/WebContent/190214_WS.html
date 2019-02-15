@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+body {
+	background-color: darkgray;
+	padding: 30px
+}
+
+#title {
+	padding: 20px;
+	font-size: 20pt;
+}
+
+div { 
+	padding: 5px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	float:left;
+	width: 60%;
+}
+
+#article {
+	float:left;
+	background-color: black;
+	color: white;
+	width: 20%;
+	font-size: 12pt;
+}
+#menu{
+	background-color: gray;
+	height:30px;
+
+}
+#menu ul li {
+	float: left;
+	padding: 5px;
+}
+
+#menu ul li a {
+	color: lightgray;
+	text-decoration: none
+}
+
+#menu ul li a:hover {
+	color: white;
+}
+
+#content ul {
+	padding: 5px;
+	float: left;
+}
+
+#subtitle {
+	margin-top: 30px;
+	padding: 30px;
+	background-image: url("src/1.png");
+	background-color:green;
+	background-position:right;
+	background-repeat:no-repeat;
+	
+	color: white;
+	height: 120px;
+	border-radius: 30px;
+}
+
+#cinemaname {
+	font-size: 20px;
+}
+
+#cinemainfo {
+	font-size: 12px;
+}
+
+#movietitle {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#movieinfo {
+	color: gray;
+	font-style: oblique;
+}
+
+#movieinfo a {
+	color: gray;
+}
+
+.infotitle {
+	font-weight: bold;
+}
+
+#highlight {
+	background-color: yellow;
+}
+
+table { //
+	border: 1px solid black;
+}
+
+table tr td { //
+	border: 1px solid black;
+	width: 50%;
+}
+
+#staff {
+	border-top: 1px solid gray;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.actor a {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.actor:hover {
+	background-color: gray;
+	border-radius: 30px;
+}
+
+.casting {
+	font-size: 12px;
+}
+
+#footer {
+	clear: both;
+	height: 150px;
+	background-color: black;
+	color:white;
+	margin-bottom: 10px;
+}
+#footer ul li{
+	float:left;
+	width:30%;
+}
+#footer ul li ul{
+	list-style: circle;
+}
+#footer ul li ul li{
+	float:none;
+}
+
+</style>
+</head>
+<body>
+	<div id="title">SSAFY 극장</div>
+	<div id="menu">
+		<ul>
+			<li><a href="">영화</a></li>
+			<li><a href="">극장</a></li>
+			<li><a href="">예매</a></li>
+			<li><a href="">이벤트</a></li>
+			<li><a href="">상영영화소개,RSS</a></li>
+		</ul>
+	</div>
+
+	<div id="subtitle">
+		<div id="cinemaname">무공해 힐링 시네마</div>
+		<div id="cinemainfo">무공해 힐링 시네마는 새로운 개념의 영화장르의 한가지를 말하는 것입니다. 지친
+			영혼을 위한 휴식을 주는 영화나, 마음을 정화시키고 치유하는 힘을 가진 영화들 ... .</div>
+
+	</div>
+<div>
+		<div id="content">
+			<div id="movietitle">쿵 푸 팬 더</div>
+			
+			<table id="movieinfo">
+				<tr>
+					<td class="infotitle">개 봉</td>
+					<td>2011.5.26</td>
+				</tr>
+				<tr>
+					<td class="infotitle">감 독</td>
+					<td><a href="">여인영</a></td>
+				</tr>
+				<tr>
+					<td class="infotitle">등 급</td>
+					<td>[국내] 전체 관람가</td>
+				</tr>
+			</table>
+
+			<table id="story">
+				<tr>
+					<td><span id="highlight">하.면.된.다 - 포.스.작.렬</span>
+						<div>'평화의 계곡'에서 아버지의 국수 가게를 돕고 있는 팬더, 포. 아버지는 국수의 비법을 알려주어
+							가업을 잇게 하고 싶지마, 포의 관심사는 오로지 '쿵푸 마스터'. 가게 일은 뒷전으로 하고 쿵푸의 비법이 적힌
+							용문서의 전수자를 정하는 '무적의 5인방' 대결을 보러 시합장을 찾은 포,</div> <img src="src/2.png"
+						width=100%></td>
+					<td>
+						<div>그런데 이게 웬일! 마을의 현인 우그우이 대사부가 포를 용문서의 전수자로 점지하는 이변이 일어난다.
+							무적의 5인방은 물론 시푸 사부 역시 이 사태를 받아들이지 못하는 가운데, 용문서를 노리고 어둠의 감옥에서 탈출한
+							타이렁이마을을 습격해오자 그를 막아야 하는 미션이 포에게 떨어지는데... 포는 쿵푸마스터로 거듭날 수 있을까?
+							아니... 포가 쿵푸를 할 수는 있을까? 똥배 안에 숨겨진 포스를 깨우기 위한 포의 도전이 시작된다!</div>
+					</td>
+				</tr>
+			</table>
+
+			<table id="staff">
+				배우/제작진
+
+				<div class="actor">
+					<a href="">Jack Black</a>
+					<div class="casting">팬더곰, 포 목소리 역</div>
+					<img src="src/3.png">
+				</div>
+
+				<div class="actor">
+					<a href="">Jackie Chan</a>
+					<div class="casting">원숭이, 몽키 목소리 역</div>
+					<img src="src/4.png">
+
+				</div>
+
+				<div class="actor">
+					<a href="">Angelina Jolie</a>
+					<div class="casting">호랑이, 타이그리스 목소리 역</div>
+					<img src="src/5.png">
+				</div>
+				</div>
+
+			</table>
+		</div>
+
+		<div id="article">
+			<div>Movies</div>
+			<ul>
+				<li>현재 상영작</li>
+				<li>상영 예정작</li>
+				<li>영화 뉴스</li>
+				<li>테마 뉴스</li>
+				<li>맥스무비 예매순위</li>
+			</ul>
+		</div>
+</div>
+
+<div id="footer">
+	<ul>
+		<li>
+			<div>About</div>
+			<div>서울 강남 역삼 멀티캠퍼스.</div> <br>
+			<div>
+				<a href="">ssafy@ssafy.com</a>
+			</div>
+		</li>
+		<li>
+			<div>개인정보 취급 방침</div>
+			<ul >
+				<li>개요</li>
+				<li>문의처</li>
+			</ul>
+		</li>
+		<li>
+			<div >공지사항</div>
+			<ul >
+				<li>오시는길</li>
+				<li>오류시 문의사항</li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>

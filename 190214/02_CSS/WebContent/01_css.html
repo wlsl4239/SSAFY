@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	div{font-size: 30pt;}
+	h1{font-size: 12pt;}
+	.footer{font-size: 10pt;background-color: yellow; }
+	#f{background-color:green;}
+	.footer2{font-size:16pt;}
+	
+	//a {color:yellow;}
+	//a:link {color:yellow;}
+	//a:visited {color:yellow;}
+	a:link,a:visited {color:yellow;}
+	a:hover {color:pink;}
+	
+	body{margin:50px;}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div>
+		<h1>title</h1>		<!-- 내 tag에 지정한 css가 우선. -->
+	</div>
+	<div>
+		<p>시작페이지의 글 내용 ...</p>
+	</div>
+	<div id="f" class="footer2 footer" >		
+	<!-- class와 id가 있으면 id에 걸린 css가 우선. -->
+	<!--  -->
+											
+		회사 주소 
+		<a href="#">관리자 이메일</a>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+	<h1>X단</h1>
+
+	<input type='number' id='num' >
+	<ul></ul>
+	
+	<script type="text/javascript">
+		document.querySelector("input").onchange = function(){
+		var x=document.querySelector("input").value;
+		var s = "";
+		for (var i = 1; i <= 9; i++)
+			s += ("<li>" + x + " * " + i + " = " + x * i + "</li>");
+		document.querySelector("ul").innerHTML = s;
+		}
+	</script>
+</body>
+</html>
