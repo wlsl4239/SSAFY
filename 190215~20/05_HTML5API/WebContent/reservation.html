@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reservation</title>
+
+<link href="myCSS.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="pageTitle">영화 예매</div>
+<div class="movieTitle">쿵푸 팬더</div>
+<div class="moviePoster"></div>
+<div>
+상영관
+<select>
+<option value="CGV">CGV</option>
+<option value="LotteCinema">LotteCinema</option>
+<option value="MegaBOX">MegaBOX</option>
+</select>
+
+날짜 선택
+<input type="date">
+<div class="timeSelect">
+<div class="timeSelect_sub">시간선택</div>
+<input type="radio" name="time" value="0830">08:30
+<input type="radio" name="time" value="1100">11:00
+<input type="radio" name="time" value="1420">14:20
+<input type="radio" name="time" value="1725">17:25
+<input type="radio" name="time" value="2010">20:10
+<input type="radio" name="time" value="2305">23:05
+</div>
+</div>
+<div class="costDetails">
+	요금 
+	<span class="principal" >\9000</span>
+	<span class="discounted">\5000</span>
+</div>
+<div class="numOfPeople">
+	인원
+	<input type="number" class="people" min="0">
+</div>
+<div>
+	요금
+	<input type="number" class="cost">
+</div>
+<div>
+	<input type="checkbox" class="option" > 옵션
+	<div class="options" >
+	<input type="checkbox" class="popcorn"> 팝콘
+	<input type="checkbox" class="cola"> 콜라
+	</div>
+</div>
+<script>
+	console.log(document.querySelector(".principal").accesskey);
+	
+	document.querySelector(".people").onchange = function(){
+		var x = document.querySelector(".people").value;
+		document.querySelector(".cost").value = 5000*x;
+	}
+	document.querySelector(".option").onchange= function(){
+		if(document.querySelector(".option").checked)
+			document.querySelector(".options").style.display="inherit";
+		else
+			document.querySelector(".options").style.display="none";
+	}
+	
+</script>
+
+</body>
+</html>

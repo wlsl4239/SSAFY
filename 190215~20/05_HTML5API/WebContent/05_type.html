@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var user = 1234;
+	user="hello";
+	user = [1,2,3,4];
+	user = new Date();
+	user = {studentNumber:"200101001", name:"KGS"};
+	console.log(user);
+	console.log(user.studentNumber);
+	console.log(user["studentNumber"]);
+	
+	var userFunction = function(){
+		console.log(arguments.length);
+		if(arguments.length==1 && typeof(arguments[0]) == "object"){
+			for(var k in arguments[0]){
+				alert(k);
+				console.log(arguments[0][k]);
+			}
+		}
+	}
+	userFunction();
+	userFunction(1234);
+	userFunction([10,20,30,40]);	//매개인자 1개.
+	userFunction(1,2,3,4);		//매개인자 4개.
+	userFunction({user:"jeon",point:100});
+	
+	
+</script>
+</body>
+</html>

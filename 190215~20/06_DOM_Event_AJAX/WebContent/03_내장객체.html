@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	var sizes = ['s','m','l'];
+	sizes[10] = 'xl'
+	for( var k in sizes){
+		console.log(sizes[k],k);
+	}
+	
+	var users = new Array();		//stack
+	console.log(typeof users);
+	users.push('jeon');
+	users.push('oopsw');
+	console.log(users.pop());
+	users.push('update');
+	
+	for(var k in users)
+		console.log(k,users[k]);
+	
+	//서버(http)에서 json형태의 문자열을 전달받았다.
+	var serverResponse ='{"user":"jeon", "point":100}';	
+	console.log(typeof serverResponse)		//type : string
+	//string --> json 
+	var j = JSON.parse(serverResponse);		// 마땅한 객체가 있으면 eval()을 사용하지 말자. 이 경우엔 JSON이 있다.
+	console.log(typeof j)		//type : object
+	for(var k in j){
+		console.log(k,j[k]);
+	}
+</script>
+</body>
+</html>

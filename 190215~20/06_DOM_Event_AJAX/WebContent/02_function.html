@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	function aaa() {
+		
+	}
+	var bbb = function () {
+		
+	}
+	console.log(typeof aaa, typeof bbb);
+	aaa = 1234;
+	bbb = {};
+	console.log(typeof aaa, typeof bbb);
+	//함수를 정의하는데 한번만 사용하고 다른사람이 함수를 사용하지 못하게 막고 싶다.
+	(function(){
+		console.log("무명함수는 정의와 동시에 호출해야 한다.");
+		var local = "local data";
+		$ = "공유객체";
+	})();
+	console.log($);
+	//console.log(local);
+	
+	var userFunction = function(){
+		console.log("userFunction",this);
+	}
+	userFunction();			//new를 안하면  window에 등록됨.
+	new userFunction();		//new를 하면 메모리를 새로 잡음.		=> 같은 함수라도 실행결과가 다르다.
+	//function을 만들 때, 메서드 : 소문자 / 생성자 : 대문자  권장.
+	var Student = function (studentNumber,name) {
+		this.studentNumber = studentNumber;
+		this.name = name;
+		this.toString = function(){
+			return studentNumber + " " + name;
+		}
+	}
+	var s = new Student("200101001","홍길동");
+	console.log(s.toString(),s);
+</script>
+</body>
+</html>

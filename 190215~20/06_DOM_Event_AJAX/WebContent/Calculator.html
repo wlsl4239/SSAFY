@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="CalculatorCSS.css" rel="stylesheet">
+</head>
+<body>
+<div>
+<input type="text" id="result" placeholder="0.0">
+<div id="buttons">
+<ul>
+	<li><button value="7">7</button></li>
+	<li><button value="8">8</button></li>
+	<li><button value="9">9</button></li>
+	<li><button value="+">+</button></li>
+</ul><ul>
+	<li><button value="4">4</button></li>
+	<li><button value="5">5</button></li>
+	<li><button value="6">6</button></li>
+	<li><button value="-">-</button></li>
+</ul><ul>
+	<li><button value="1">1</button></li>
+	<li><button value="2">2</button></li>
+	<li><button value="3">3</button></li>
+	<li><button value="*">*</button></li>
+</ul><ul>
+	<li><button value="0">0</button></li>
+	<li><button value="CE">CE</button></li>
+	<li><button value="=">=</button></li>
+	<li><button value="/">/</button></li>
+</ul>
+</div>
+<div id="history">
+<h1>결 과 이 력</h1>
+</div>
+</div>
+
+<!-- 
+1. css 사이즈 조정에 %가 아닌 px을썼다.
+2. eval()함수사용. -> 마땅한 객체가 없기때문에 사용해도 괜찮다고하심.
+3. innerHTML += ~~~+"<br>"; 사용. 맞는진 모르겠으나 야매느낌
+4. getElementById 사용. querySelector("#history")으로 변경함.
+ -->
+
+<script>
+	var buttons = document.querySelectorAll("button");
+	var calculate = "";
+	var calCount = "1";
+	var flag = false;
+	for(var b in buttons){
+		buttons[b].onclick = function(){
+			switch(this.value){
+			case 'CE':
+				calculate = "";			
+				break;
+			case '=':
+				document.querySelector("#history").innerHTML += calCount+". "+calculate+"="+eval(calculate)+"<br>";
+				calCount++;
+				flag = true;
+				calculate = eval(calculate);
+				break;
+			case '+': case '-': case '*': case '/':
+				var last = calculate.charAt(calculate.length-1);
+				if(last == '+' || last == '-' || last == '*' || last == '/')
+					calculate = calculate.substring(0, calculate.length-1) + this.value;
+				else
+					calculate += this.value;
+				break;
+			default:
+				if(flag){
+					calculate = "";
+					flag = false;
+				}
+				calculate += this.value;
+			}
+			document.querySelector("input").value = calculate;
+			
+		}
+	}
+	
+</script>
+</body>
+</html>

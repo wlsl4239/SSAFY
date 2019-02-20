@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* tag, class, id 순으로 적자. */
+body {
+	background-color: darkgray;
+	padding: 30px
+}
+
+span {
+	padding: 5px;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 5px
+}
+
+div {
+	padding: 15px;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 5px
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+table tr td {
+	width: 50%;
+}
+
+.infotitle {
+	font-weight: bold;
+}
+
+.pageTitle {
+	font-Size: 30pt;
+	font-weight: bold
+}
+
+.movieTitle {
+	font-Size: 20pt;
+	font-weight: bold
+}
+
+.moviePoster {
+	width: 320px;
+	height: 480px;
+	background-image: url("./src/poster.png");
+	background-size: 100% 100%;
+}
+
+.timeSelect {
+	border: 1px solid black;
+}
+
+.principal {
+	text-decoration: line-through;
+}
+
+.discounted {
+	text-decoration: underline;
+}
+
+.options {
+	border: 1px solid black;
+	display: none;
+}
+
+.timeSelect_sub {
+	background-color: darkgray;
+	margin-top: -20px;
+	width: 70px;
+	padding: 0;
+}
+
+.actor a {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.actor:hover {
+	background-color: gray;
+	border-radius: 30px;
+}
+
+.casting {
+	font-size: 12px;
+}
+
+#title {
+	padding: 20px;
+	font-size: 20pt;
+}
+
+#content {
+	float: left;
+	width: 60%;
+}
+
+#article {
+	float: left;
+	background-color: black;
+	color: white;
+	width: 20%;
+	font-size: 12pt;
+}
+
+#menu {
+	background-color: gray;
+	height: 30px;
+}
+
+#menu ul li {
+	float: left;
+	padding: 5px;
+}
+
+#menu ul li a {
+	color: lightgray;
+	text-decoration: none
+}
+
+#menu ul li a:hover {
+	color: white;
+}
+
+#menu ul li ul li a:hover {
+	color: black;
+}
+
+#menu ul li:hover>ul {
+	display: block;
+}
+
+#menu ul ul {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	background-color: white;
+}
+
+#content ul {
+	padding: 5px;
+	float: left;
+}
+
+#subtitle {
+	margin-top: 30px;
+	padding: 30px;
+	background-image: url("src/1.png");
+	background-color: green;
+	background-position: right;
+	background-repeat: no-repeat;
+	color: white;
+	height: 120px;
+	border-radius: 30px;
+}
+
+#cinemaname {
+	font-size: 20px;
+}
+
+#cinemainfo {
+	font-size: 12px;
+}
+
+#movietitle {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#movieinfo {
+	color: gray;
+	font-style: oblique;
+}
+
+#movieinfo a {
+	color: gray;
+}
+
+#highlight {
+	background-color: yellow;
+}
+
+#staff {
+	border-top: 1px solid gray;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#footer {
+	clear: both;
+	height: 150px;
+	background-color: black;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#footer ul li {
+	float: left;
+	width: 30%;
+}
+
+#footer ul li a {
+	color: gray;
+}
+
+#footer ul li ul {
+	list-style: circle;
+	color: gray;
+	font-size: 12pt;
+}
+
+#footer ul li ul li {
+	float: none;
+}

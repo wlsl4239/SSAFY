@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	아이디 체크<input> <br>
+	<button>아이디 체크</button>
+	
+	<script type="text/javascript">	
+	//C방식을 구현 할 때는 HTML5 API 패턴을 근거로 구현하자.
+	document.querySelector("button").onclick = function (){
+		location.href="ccc.jsp?"+"id="+document.querySelector("input").value;		//location : 주소창.
+		
+	}
+	
+		
+	//  --필기--
+	
+	//	document.querySelector("button")  -> DOM
+	//  document.querySelector("button").onclick  -> event 발생
+	//  document.querySelector("button").onclick = function(){}		->event handling
+	
+	//  document.querySelector("button").onclick = buttonHandling(); -> 안됨!!
+	
+	//  var buttonHandling = function (){ location.href="ccc.jsp?"+"id="+document.querySelector("input").value;	}
+	//  document.querySelector("button").onclick = buttonHandling;	함수 구현부를 복사.
+	
+	
+</script>
+</body>
+</html>

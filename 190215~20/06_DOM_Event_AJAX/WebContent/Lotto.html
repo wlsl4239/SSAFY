@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+body{padding:30px;}
+.num{background-color: yellow; border-radius: 50%; float:left; margin:5px; width:30px; height:30px;}
+#welcome{ font-weight: bold}
+#lotto{background-color: blue; text-align: center; font-size:large; height:50px; padding-left: 30%;padding-right: 30%;}
+</style>
+
+</head>
+<body>
+
+	<div>
+		<div id="welcome">대박을 기원합니다~~</div>
+		<div id="lotto"></div>
+	</div>
+
+	<script>
+		var a = document.querySelector("#lotto");
+		
+		var cnt = 0;
+		function lotto(){
+			a.innerHTML += '<div class= "num">' + Math.floor(Math.random() * 45 + 1) + "</div>";
+			cnt++;
+			if(cnt>=6)
+				clearInterval(myfunc);
+		}
+		var myfunc = setInterval(lotto, 1000);
+		
+			
+		
+	</script>
+</body>
+</html>

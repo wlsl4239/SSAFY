@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="./css/ssafy.css" rel="stylesheet">
+<style type="text/css" >
+h1 {
+	background-color: yellow;
+	font-size:15pt;
+}
+</style>
+</head>
+<body>
+	<h1>audio / video</h1>
+	
+	
+	<!-- 
+	<audio controls="controls">
+	<source src="./media/Kalimba.mp3">
+	<source src="./media/Kalimba.ogg">
+	</audio>
+	 -->
+	
+	<!-- 	
+	<audio src="./media/Kalimba.mp3" />
+	
+	<script type="text/javascript">
+		var a = document.querySelector("audio");
+		//DOM - element의 위치를 접근하고 .을 붙이면 attribute이다.
+		a.controls="controls";
+		//a.controls=1;
+		
+	</script> 
+	-->
+	<input type="button" value="Play">
+	<input type="button" value="Stop">
+	<video></video>
+	
+	<script>
+	var v = document.querySelector("video");
+    var buttons=document.querySelectorAll("input");
+	v.width="250" 
+	v.src="./media/Wildlife.mp4" 
+	v.controls = "controls";	
+	for(var i in buttons)
+		buttons[i].onclick=buttonEvent;
+	
+	function buttonEvent(){
+		console.log(this.value)
+		switch(this.value){
+		case "Play": v.play(); break;
+		case "Stop": v.pause();break;
+		}
+	}
+	
+	//buttons[0].onclick = Play;
+	//buttons[1].onclick = Stop;
+	//function Play(){v.play();};
+	//function Stop(){v.pause();};
+	
+</script>
+	 
+</body>
+</html>

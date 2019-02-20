@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function idCheck(){
+		var inputId = document.getElementById("inputId").value;
+		location.href="bbb.jsp"+"?"+"id="+inputId;		//location : 주소창.
+	}
+</script>
+	
+</head>
+<body>
+
+	아이디 체크<input type="text" id="inputId" name="inputId" required="required"> <br>
+	<button onclick="idCheck()">아이디 체크</button>
+	
+	
+</body>
+</html>
