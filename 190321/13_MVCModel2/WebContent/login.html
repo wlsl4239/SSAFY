@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+span{width:100px; display: inline-block;}
+</style>
+</head>
+<body>
+<h1>logIn</h1>
+<form action="MVCservlet?cmd=login" method = "post">	<!-- html의 /와 servlet의 /는 다르다. -->
+	<span>id</span> <input type="text" name="id"><br>
+	<span>pw</span> <input type="password" name="pw"><br>
+	<input type="submit" value="로그인">
+</form>
+</body>
+</html>
