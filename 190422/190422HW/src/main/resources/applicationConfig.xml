@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean class="com.ssafy.product.ProductA" id="pa">
+		<constructor-arg name="code" value="A001" type="java.lang.String"></constructor-arg>
+		<constructor-arg name="name" value="바나나킥" type="java.lang.String"></constructor-arg>
+		<constructor-arg name="price" value="1000" type="int"></constructor-arg>
+	</bean>
+	
+	<bean class="com.ssafy.product.ProductB" id="pb">
+		<constructor-arg name="code" value="B001" type="java.lang.String"></constructor-arg>
+		<constructor-arg name="name" value="설레임" type="java.lang.String"></constructor-arg>
+		<constructor-arg name="price" value="1500" type="int"></constructor-arg>
+	</bean>
+	
+	<bean class="com.ssafy.product.ProductManager" id="pm">
+		<constructor-arg name="p" ref="pb"/>
+	</bean>
+	
+
+</beans>
