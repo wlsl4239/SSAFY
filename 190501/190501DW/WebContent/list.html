@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+<h1>SSAFY HRM LIST</h1>
+
+<a href="#">사원추가</a> | <a href="#">이름으로 찾기</a> | <a href="#">아이디로 찾기</a> | <a href="#">모든사원 보기</a> <br><br>
+
+<div id="app">
+<table style="border: 1px solid lightgray;">
+<tr style="background-color: gray;">
+	<td>사원 아이디</td>
+	<td>사원명</td>
+	<td>부서</td>
+	<td>직책</td>
+	<td>연봉</td>
+</tr>
+
+<tr v-for="emp in emps">
+	<td v-text="emp.id"></td>
+	<td v-text="emp.name"></td>
+	<td v-text="emp.deptno"></td>
+	<td v-text="emp.job"></td>
+	<td v-text="emp.sal"></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript">
+var model = {emps : [
+	{id : "1", name : "박구곤", deptno : "118", job : "사장", sal : 5000.00},
+	{id : "2", name : "손명성", deptno : "110", job : "기획부장", sal : 3000.00},
+	{id : "3", name : "이은성", deptno : "102", job : "영업부장", sal : 3500.00},
+	{id : "4", name : "서의홍", deptno : "101", job : "총무부장", sal : 3000.00}
+]}
+
+var vueObject = {el : "#app",data : model};
+var v1 = new Vue(vueObject);
+
+Vue.config.devtools = true;
+</script>
+
+</body>
+</html>
